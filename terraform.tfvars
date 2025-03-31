@@ -1,8 +1,8 @@
 aws_region      = "ap-south-1"
 
 # AWS Credentials (Only if not using an IAM role for Terraform)
-aws_access_key  = "AKIAWCZC5P466Z76UXDK"
-aws_secret_key  = "kvRwGG6RRfKEKdEPP9Qw+9WNTJ9O1Xh8hbeIwtEp"
+aws_access_key  = "your access key"
+aws_secret_key  = "your secret access key"
 
 # ECS Cluster & EC2 Details
 cluster_name    = "ktt"
