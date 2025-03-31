@@ -131,12 +131,12 @@ variable "ecr_url" {
 
 variable "desired_capacity" {
   description = "Desired number of ECS instances"
-  default     = 1
+  default     = 0
 }
 
 variable "min_size" {
   description = "Minimum number of ECS instances"
-  default     = 1
+  default     = 0
 }
 
 variable "max_size" {

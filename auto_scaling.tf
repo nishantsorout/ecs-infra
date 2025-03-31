@@ -17,6 +17,19 @@ resource "aws_autoscaling_group" "ecs_asg" {
 }
 
 
+
+
+/*
+# Attach existing EC2 instance to ASG
+resource "aws_autoscaling_attachment" "existing_instance" {
+  autoscaling_group_name = aws_autoscaling_group.ecs_asg.name
+  instance_id            = "i-xxxxxxxxxxxxx" # Replace with your instance ID
+}
+*/
+
+
+
+
 ## Adding Auto Scaling Group Policies
 resource "aws_autoscaling_policy" "scale_up" {
   name                   = "scale-up-policy"

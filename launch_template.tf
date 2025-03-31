@@ -48,8 +48,10 @@ EOF
   }
 }
 
-# If we have an ami id, then we can directly create an ASG from it; no need to define a separate launch template
+
 /* 
+
+# If we have an ami id, then we can directly create an ASG from it; no need to define a separate launch template
 resource "aws_launch_template" "ecs_launch_template" {
   name_prefix   = "ecs-instance"
   image_id      = "ami-xxxxxxxxxxxxxxxxx"  # Replace with your new AMI ID
