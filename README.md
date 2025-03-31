@@ -1,2 +1,2 @@
 # ecs-infra
-Created ECS infra which includes ALB and ASg
+Created ECS infra integrated with ALB and ASg
