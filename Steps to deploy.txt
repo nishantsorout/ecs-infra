@@ -1,0 +1,17 @@
+# Initialize Terraform
+terraform init
+terraform plan
+
+# 1️⃣ Auto-login to AWS CLI
+terraform apply -target=null_resource.aws_cli_login -auto-approve
+
+# 2️⃣ Create only ECR repositories
+terraform apply -target=aws_ecr_repository.backend_auth -target=aws_ecr_repository.backend_booking -auto-approve
+
+# 3️⃣ Show Docker Push Commands
+terraform output docker_push_commands
+
+# 4️⃣ Manually push Docker images to ECR (copy-paste the commands from output)
+
+# 5️⃣ Deploy remaining ECS resources (ECS cluster, tasks, services)
+terraform apply -auto-approve
